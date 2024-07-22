@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TVS Chat</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main class="container">
+        <div class="chatPage">
+            <div class="sidebar">
+                <div class="line side">Active Members</div>
+                <hr class="sideLine" />
+                <ul id="activeUsers" class="names"></ul>
+                <button id="disconnectButton" class="hidden">Log Out</button>
+            </div>
+            <div class="chatArea">
+                <div class="line c">TVS Chat</div>
+                <hr class="chatLine" />
+                <div class="messages">
+                    <div class="msg"></div>
+                    <div class="inputArea">
+                        <input class="inputMessage" placeholder="Type here..." />
+                        <button class="sendButton">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="loginPage">
+            <div class="form">
+                <h3 class="title">What's your nickname?</h3>
+                <input class="usernameInput" type="text" maxlength="14" />
+              </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/main.js"></script>
+</body>
+
+</html>
